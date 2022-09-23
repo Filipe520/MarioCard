@@ -1,0 +1,85 @@
+@charset "UTF-8"; /* caso haja problemas com acentuação*/
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(../Fontes/Nunito/Nunito-VariableFont_wght.ttf) format('opentype');
+}
+
+body {
+    height: 100vh;
+
+    background-image: url(../image/bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Nunito'
+}
+
+header {
+    margin: 10px 0px 60px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: rgba(255, 235, 205, 0);
+    
+}
+
+div {
+    width: 685px;
+    height: 150px;
+    
+    background-image: url(../image/Pipe.png);
+    background-repeat: no-repeat;
+    
+    color: #F4F4F4;
+    
+    font-size: 2em;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+header > button {
+    width: 200px;
+    height: 52px;
+    
+    border-radius: 10px;
+    
+    background-color: #E52521;
+    color: #F4F4F4;
+
+    border: 3px solid #F4F4F4;
+
+    font-size: 36px;
+    font-weight: 400px;
+
+    text-align: center;
+
+    margin-right: 100px;
+}
+
+header > button:hover {
+    background-color: transparent;
+    cursor: pointer;
+
+    border: 3px solid #E52521;
+}
+
+
+main {
+    width: 80%;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 80px;
+    grid-column-gap: 50px;
+}
