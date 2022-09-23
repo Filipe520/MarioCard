@@ -1,85 +1,163 @@
-@charset "UTF-8"; /* caso haja problemas com acentuação*/
+@charset "UTF-8"; /* caso haja problemas com acentuação */
 
 @font-face {
     font-family: 'Nunito';
-    src: url(../Fontes/Nunito/Nunito-VariableFont_wght.ttf) format('opentype');
+    src: url(../Fontes/Nunito/Nunito-VariableFont_wght.ttf) format('Truetype');
+}
+
+:root {
+    --cor01: #F4F4F4;           /* BRANCO */
+    --cor02: #E52521;           /* VERMELHO */
+    --cor03: rgba(0, 0, 0, 0.548); /* SOMBRA DAS LETRAS */
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-
     background-image: url(../image/bg.png);
-    background-position: center bottom;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    font-family: 'Nunito'
+    height: 100vh;
+
+    font-family: 'Nunito';
+
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    margin: 10px 0px 60px;
-    
+    height: 20vh;
+    background-color: rgba(255, 2, 2, 0);
+
+
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
-    
-    background-color: rgba(255, 235, 205, 0);
-    
+    justify-content: space-between;
+
+    column-gap: min(20px, 2.5vw)
 }
 
-div {
-    width: 685px;
-    height: 150px;
+header > div {
+    width: min(664px, 90vw);
     
+    height: max(1em, 15vw);
+
+    padding-left: 8vw;
+
+    background-color: rgba(0, 0, 255, 0);
     background-image: url(../image/Pipe.png);
     background-repeat: no-repeat;
-    
-    color: #F4F4F4;
-    
-    font-size: 2em;
-    font-weight: 700;
+    background-size: min(664px, 80vw);
+    background-position: left center;
+
+    margin-left: -10px;
+
 
     display: flex;
-    justify-content: space-around;
     align-items: center;
-
+    justify-content: center;
 
 }
 
+header > div > img {
+    width: max(16em, 28vw);          /* Largura mínima é 16em, é igual a 16*16 = 256-PIXEL. 
+                               E o MÁXIMO  vai ser 28vw,  vai pegar 28% da viewport nas larguras*/
+}
+
+header > div > p {
+    display: flex;
+    font-size:  min(30px, 5vw);
+    font-weight: 600;
+    
+    text-shadow: 1px 1px 1px var(--cor03);
+    
+    color: var(--cor01);
+
+    margin-right: 30px;
+}
+
+header > div > p + p {
+    margin-right: 0px;
+}
+
+
 header > button {
-    width: 200px;
-    height: 52px;
-    
-    border-radius: 10px;
-    
-    background-color: #E52521;
-    color: #F4F4F4;
+                        /* Largurar do bottom: ; */
+    width: min(180px, 19vw);
+                        /* Alturar do bottom: ; */
+    height: min(40px, 50vw);
 
-    border: 3px solid #F4F4F4;
+    margin-right: max(-2em, 2vw);
+    
+    border-radius: 8px;
+    border: 2px solid var(--cor01);
 
-    font-size: 36px;
-    font-weight: 400px;
+    font-size:  max(1.2em, 1vw);
+    
+    font-weight: 400;
 
     text-align: center;
 
-    margin-right: 100px;
+    text-shadow: 1px 1px 1px var(--cor03);
+
+    color: var(--cor01);
+    background-color: var(--cor02);
+
+    transition: .1s;
+
+
 }
 
 header > button:hover {
-    background-color: transparent;
     cursor: pointer;
 
-    border: 3px solid #E52521;
+    border: 2px solid black;
+
+    font-size: max(1.3em, 1.5vw);
+
+    color: var(--cor02);
+    background-color: var(--cor01);
+
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.445);
 }
 
-
 main {
-    width: 80%;
+    min-width: 320px;
+    max-width: 1100px;
 
-    margin: 0 auto;
+    min-height: 300px;
+    max-height: 500px;
+    padding: 5px;
 
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-row-gap: 80px;
-    grid-column-gap: 50px;
+    margin: auto;
+
+    background-color: rgba(221, 123, 11, 0);
+    display: flex;
+}
+
+main > div{
+    display: flex;
+
+    align-items: center;
+    
+    justify-content: center;
+    
+    /* background-color: rgba(255, 0, 0, 0); */
+    
+    flex-wrap: wrap;
+
+    column-gap: max(1em, 3vw);
+    row-gap: max(1em, 3vw);
+}
+
+main > div img {
+    width: min(200px, 20vw);
+    height: min(200px, 20vw);
+
+    cursor: pointer;
 }

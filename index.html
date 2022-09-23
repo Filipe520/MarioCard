@@ -17,15 +17,26 @@
     <main>
         <section id="logos">
                         <!-- Logo Mario Memory-->
-            <img id="logo-MM" src="src/image/logo-mario-memory.png" alt="Logo Mario Memoriy">
+            <picture>
+              <!-- Vai carregar uma imagem quando chegar 320px da tela -->
+                <source media="(max-width: 320px)" srcset="src/image/images_responsivas/mario-memory-pequena.png" type="image/png">
+
+                <img id="logo-MM" src="src/image/images_responsivas/mario-memory-grande.png" alt="Logo Mario Memoriy">
+            </picture>
+
                         <!-- Logo Programar para Evoluir-->
-            <img id="logo-PPE" src="src/image/nome-maratona.png" alt="Logo Evoluir">
+            <picture>
+              <!-- Vai carregar uma imagem quando chegar 320px da tela -->
+                <source media="(max-width: 320px)" srcset="src/image/images_responsivas/nome-maratona-pequeno.png" type="image/png">
+
+                <img id="logo-PPE" src="src/image/images_responsivas/nome-maratona-grande.png" alt="Logo Evoluir">
+            </picture>            
                         <!-- Logo Kenzie-->
             <img id="logo-Kenzie" src="src/image/Logo Kenzie.png" alt="Logo da Kenzie">
         </section>
 
         <section id="jogar">
-            <p>Encontre todos os pares no menor tempo possível acumulando pontos a cada rodada!</p>
+            <p>Encontre todos os pares <br> no menor tempo possível <br> acumulando pontos a <br> cada rodada!</p>
 
             <button>
                 Jogar
