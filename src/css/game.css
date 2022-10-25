@@ -39,7 +39,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    column-gap: min(20px, 2.5vw)
+    column-gap: 5px;
 }
 
 header > div {
@@ -97,7 +97,7 @@ header > button {
     border-radius: 8px;
     border: 2px solid var(--cor01);
 
-    font-size:  max(1.2em, 1vw);
+    font-size:  max(.7em, 1.2vw);
     
     font-weight: 400;
 
@@ -118,7 +118,7 @@ header > button:hover {
 
     border: 2px solid black;
 
-    font-size: max(1.3em, 1.5vw);
+    font-size: max(.8em, 1.3vw);
 
     color: var(--cor02);
     background-color: var(--cor01);

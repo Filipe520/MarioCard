@@ -14,12 +14,14 @@
                         <!-- Estilo da Página-->
     <link rel="stylesheet" href="src/css/index.css">
 <body>
-    <main>
+    <main id="main">
         <section id="logos">
                         <!-- Logo Mario Memory-->
-            <picture>
+            <picture >
               <!-- Vai carregar uma imagem quando chegar 320px da tela -->
-                <source media="(max-width: 320px)" srcset="src/image/images_responsivas/mario-memory-pequena.png" type="image/png">
+                <source media="(max-width: 320px)" srcset="src/image/images_responsivas/mario-memory-pequeno.png" type="image/png">
+              <!-- Vai carregar uma imagem quando chegar 470px da tela -->
+                <source media="(max-width: 470px)" srcset="src/image/images_responsivas/mario-memory-medio.png" type="image/png">
 
                 <img id="logo-MM" src="src/image/images_responsivas/mario-memory-grande.png" alt="Logo Mario Memoriy">
             </picture>
@@ -28,7 +30,7 @@
             <picture>
               <!-- Vai carregar uma imagem quando chegar 320px da tela -->
                 <source media="(max-width: 320px)" srcset="src/image/images_responsivas/nome-maratona-pequeno.png" type="image/png">
-
+                <source media="(max-width: 470px)" srcset="src/image/images_responsivas/nome-maratona-medio.png" type="image/png">
                 <img id="logo-PPE" src="src/image/images_responsivas/nome-maratona-grande.png" alt="Logo Evoluir">
             </picture>            
                         <!-- Logo Kenzie-->

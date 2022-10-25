@@ -1,0 +1,36 @@
+@charset "UTF-8"; /* caso haja problemas com acentuação */
+
+:root {
+    --cor_transparente: #f4f4f496;
+    --branco: #F4F4F4;
+    --azul: #049CD8;
+}
+
+body {
+    height: 100vh;
+    
+    background-image: url(../image/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Nunito';
+}
+
+main {
+    min-width: 220px;
+    max-width: 1200px;
+
+    margin: 0px 10px;
+
+    background-color: var(--cor_transparente);
+    
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}

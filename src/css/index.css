@@ -23,10 +23,9 @@ body {
 }
 
 main {
-    width: min(1200px, 100vw);
+    min-width: 220px;
+    max-width: 1200px;
 
-    height: max(200px, 60vh);
-    
     margin: 10px;
 
     background-color: var(--cor_transparente);
@@ -78,7 +77,8 @@ main {
 }
 
 #jogar p {
-    width: 375px;
+    min-width: 150px;
+    max-width: 375px;
 
     margin: 30px;
     
